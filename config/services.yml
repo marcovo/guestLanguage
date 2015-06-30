@@ -1,0 +1,9 @@
+services:
+    messageboard.quickLanguage.listener:
+        class: messageboard\quickLanguage\event\main_listener
+        arguments:
+            - @request
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }
