@@ -7,7 +7,7 @@
 *
 */
 
-namespace messageboard\quickLanguage\event;
+namespace messageboard\guestLanguage\event;
 
 /**
 * Event listener
@@ -25,7 +25,7 @@ class main_listener implements EventSubscriberInterface
 		$this->template = $template;
 		$this->user = $user;
 		
-		$this->user->add_lang_ext('messageboard/quickLanguage', 'common');
+		$this->user->add_lang_ext('messageboard/guestLanguage', 'common');
 	}
 	
 	static public function getSubscribedEvents()
@@ -40,8 +40,8 @@ class main_listener implements EventSubscriberInterface
 		if($this->user->data['user_id'] == ANONYMOUS)
 		{
 			$this->template->assign_vars(array(
-				'S_QL_HIDDEN_FIELDS'	=> build_hidden_fields($this->request->get_super_global(\phpbb\request\request_interface::GET)),
-				'S_QL_LANG_OPTIONS'		=> language_select($this->user->lang_name),
+				'S_GL_HIDDEN_FIELDS'	=> build_hidden_fields($this->request->get_super_global(\phpbb\request\request_interface::GET)),
+				'S_GL_LANG_OPTIONS'		=> language_select($this->user->lang_name),
 			));
 		}
 	}

@@ -1,4 +1,4 @@
-Quick Language
+Guest Language
 ================
 
 PhpBB 3.1 extension.

@@ -1,7 +1,7 @@
 {
-   "name": "messageboard/quickLanguage",
+   "name": "messageboard/guestLanguage",
    "type": "phpbb-extension",
-   "description": "Adds a dropdown box in the forum header, enabling unregistered users to choose any of the installed languages",
+   "description": "Adds a dropdown box in the forum header, enabling unregistered users (guests) to choose any of the installed languages",
    "homepage": "",
    "version": "1.0.0",
    "time": "2015-03-13",
@@ -24,7 +24,7 @@
       "php": ">=5.3.3"
    },
    "extra": {
-      "display-name": "Quick Language",
+      "display-name": "Guest Language",
       "soft-require": {
          "phpbb/phpbb": ">=3.1.0,<3.2.*@dev"
       }

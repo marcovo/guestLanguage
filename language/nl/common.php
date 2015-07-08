@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* QuickLanguage language [Dutch]
+* GuestLanguage language [Dutch]
 *
 * @package language
 * @copyright Messageboard.nl < messageboard.nl > Messageboard.nl
@@ -23,7 +23,7 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'QL_LANGUAGE'		=> 'Taal',
+	'GL_LANGUAGE'		=> 'Taal',
 	
 ));
 

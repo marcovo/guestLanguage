@@ -1,6 +1,6 @@
 services:
-    messageboard.quickLanguage.listener:
-        class: messageboard\quickLanguage\event\main_listener
+    messageboard.guestLanguage.listener:
+        class: messageboard\guestLanguage\event\main_listener
         arguments:
             - @request
             - @template
